@@ -10,10 +10,10 @@
     </title>
 </head>
 <body> 
-    <nav class="navbar bg-body-tertiary fixed-top">
+    <nav class="navbar bg-body-tertiary fixed-top" id="navColor">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="logo" width="30" height="24" alt="">Daily Forecast</a>
+          <a class="navbar-brand" href="#" id="textColor">
+            <img src="./images/cut form.png" width="30" height="24" alt="logo">Daily Forecast</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,27 +28,29 @@
               </ul>
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Username" aria-label="Username">
-  </form>
+             </form>
         </ul>
-        <form class="d-flex mt-3" role="search">
-          <input class="form-control me-2" type="search" placeholder="Password" aria-label="Password">
-         <div></div>
-          <button class="btn btn-outline-success" type="submit">Login</button>
-          <button class="btn btn-outline-success" type="submit">Login</button>
-        </form>
-          
-      </div>
+     <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Password" aria-label="Password">     
+     </form>
+     <div id="spaceV"></div>
+     <button class="btn btn-outline-success" type="submit" id="login">Login</button>
+        
+     <button class="btn btn-outline-success" type="submit" id="signUp">Sign up</button>
+         </div>
        </div>
-        </div>
-
-      <section id="weatherDisplay">
+    </div>
+</nav>
+                          <!-- ________________________________________________________________________________________________ --> 
+       <section id="weatherDisplay">
         <!-- current day forecast -->
         <div id="currentDay" class="card">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis odio ab quos voluptates voluptatem, voluptate officia unde, deleniti ipsa, quis quod repellendus labore corrupti. Facilis saepe recusandae nam veniam quibusdam!
-          </p>
+           <form id="spreadSearch">
+            <input type="text" name="search" placeholder="Search..">
+           </form>
         </div>
         <!-- rest of the week forecast -->
+        
         <div id="weekForecast" class="card">
           rger
           <p>Lorem cia, s!</p>
@@ -82,7 +84,7 @@
 
       </section>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="./Assets/script.js"></script>
+      <script src="./Assets/script.js"></script>
     <footer>
       @ Copyright by blablalbal
     </footer>

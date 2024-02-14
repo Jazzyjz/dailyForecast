@@ -100,3 +100,38 @@ footer{
     margin-right: 170px;
     border-top-width: .75px ;
 }
+#spaceV{
+    padding-top: 30px;
+}
+#signUp{
+    margin-left: 50px;
+}
+#login{
+    margin-left: 80px;
+}
+#navColor{
+    background-color: black !important;
+    color: white !important;
+}
+#textColor{
+    color: white;
+}
+
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('searchicon.png');
+        background-position: 10px 10px; 
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        transition: width 0.4s ease-in-out;
+      }
+      
+      input[type=text]:focus {
+        width: 100%;
+      }
+    
