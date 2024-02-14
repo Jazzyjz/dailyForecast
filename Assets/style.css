@@ -1,3 +1,4 @@
+
 form{
     float: inline-end;
     display: block;
@@ -81,3 +82,59 @@ nav {
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
   }
+
+#weatherDisplay{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 90px;
+
+}
+#currentDay{
+    box-shadow: 5px 3px 5px #B3B6BD;
+    margin-bottom: 2px;
+}
+#weekForecast{
+    display: flex;
+    flex-direction: row;
+    box-shadow: 5px 3px 5px #B3B6BD;
+
+}
+.card{
+    color: white;
+    min-width: 450px;
+    min-height: 150px;
+    max-width: 650px;
+    max-height: 150px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    background-color: #5C95FF !important;
+    
+    
+}
+
+#tech{
+    display: flex;
+    flex-direction: row;
+}
+#techNews{
+    min-width: 450px;
+    min-height: 150px;
+    max-width: 650px;
+    max-height: 150px;
+    background-color: #5C95FF !important;
+}
+footer{
+    margin-top: 195px;
+    padding-top: 15px;
+    text-align: center;
+    border-top-color: #B3B6BD;
+    border-top-style:groove;
+    margin-left: 170px;
+    margin-right: 170px;
+    border-top-width: .75px ;
+
+}
+
