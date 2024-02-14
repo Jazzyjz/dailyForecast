@@ -91,7 +91,7 @@ body{
 }
    /* Footer */
 footer{
-    margin-top: 195px;
+    bottom: 1150px;
     padding-top: 15px;
     text-align: center;
     border-top-color: #B3B6BD;
