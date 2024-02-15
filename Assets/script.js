@@ -13,41 +13,53 @@ searchBtn.addEventListener('click', submitForm);
 var apiKey = "932891f970d879716f109a3b5af52d42"
 
 // // current day api 
-var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q="+ +"&appid="+apiKey;
+
 
 // rest of week api
-var weeklyWeather = "https://pro.openweathermap.org/data/2.5/forecast/hourly?q="+ +"&appid="+ apiKey;
+var weeklyWeather = "https://pro.openweathermap.org/data/2.5/forecast/hourly?q="+ city +"&appid="+ apiKey;
 
 
 // function to submit city input
-async function submitForm(){
+async function submitForm(e){
+    e.preventDefault()
     if(!cityInputEl.value){
         alert("Enter a city name ");
         return;
     }
     var search = cityInputEl.value;
     
+
+    console.log(search);
+    getdayForecast(search);
+    cityInputEl.value = "";
+
 }
 
 // get current day forecast
 
-async function getdayForecast() {
+function getdayForecast(city) {
+    var currentWeather = "https://api.openweathermap.org/data/2.5/weather?q="+ city +"&appid="+apiKey;
     fetch(currentWeather)
-    const response = await fetch(currentWeather);
-    const data = await response.json();
-    return data;
+    .then(response => response.json())
+    .then(data => {
+    dayOfForecast(city, data);
+    console.log(data)
+  });
+    
+
 }
-async function getWeekForecast() {
-    fetch(weeklyWeather);
-    const response = await fetch(weeklyWeather);
-    const data = await response.json();
-    return data;
+function getWeekForecast() {
+    fetch(weeklyWeather)
+    .then(response => response.json())
+    .then(data => {
+    renderCurrentWeather(city, data);
+  })
 }
 
-async function getForecast(){
 
-    async function dayOfForecast() {
-        var today = await getdayForecast();
+
+    async function dayOfForecast(city,weather) {
+        console.log(weather)
         // create var for new element of day
     
         // inject data in var
@@ -66,7 +78,5 @@ async function getForecast(){
     
         // append var data in created element
     }
-    dayOfForecast()
-    weekForecast()
-}
+ 
 
