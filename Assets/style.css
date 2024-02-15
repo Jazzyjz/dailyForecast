@@ -98,7 +98,8 @@ footer{
     border-top-style:groove;
     margin-left: 170px;
     margin-right: 170px;
-    border-top-width: .75px ;
+    margin-top: 760px;
+    border-top-width: .25px ;
 }
 #spaceV{
     padding-top: 30px;
